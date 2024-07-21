@@ -94,9 +94,10 @@ The server host, port, credentials and database are set in line 15-19 in the scr
 
 ``` connection = psycopg2.connect(user="postgres", password="admin", host="127.0.0.1", port="5432", database="fhir") ```
 								  
-Once the script is run it is listening for notifications. You can use  the "generate_observation.py" script to generate a resource and trigger a notification.
+Once the script is run it is listening for notifications. 
 
 The script takes the filename for the timestamps as an argument.
+
 ```py generate_observation [filename]```
 
 When RTD is received the timestamp on receipt is recorded to a csv file ([filename].csv)
