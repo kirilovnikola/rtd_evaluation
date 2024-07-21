@@ -108,7 +108,7 @@ When RTD is received the timestamp on receipt is recorded to a csv file ([filena
 
 Install Golang (https://go.dev/doc/install).
 
-To set up you FHIR server address you need to change line 59:
+To set up you FHIR server address you need to change line 72:
 
 ```rev_proxy, err := NewProxy("http://localhost:8080")```
 
