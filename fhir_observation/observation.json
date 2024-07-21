@@ -1,0 +1,28 @@
+{
+      "resourceType": "Observation",
+      "status": "final",
+	  "category": [ {
+        "coding": [ {
+          "system": "26436-6",
+          "code": "http://loinc.org"
+        }, {
+          "system": "laboratory",
+          "code": "http://terminology.hl7.org/CodeSystem/observation-category"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2823-3"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/1"
+      },
+      "valueQuantity": {
+        "value": 3.99,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    }

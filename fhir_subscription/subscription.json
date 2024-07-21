@@ -1,0 +1,16 @@
+{
+      "resourceType": "Subscription",
+      "status": "active",
+      "contact": [ {
+        "system": "email",
+        "value": "test_fhir_subscription",
+        "use": "work"
+      } ],
+      "reason": "test",
+      "criteria": "Observation?subject=ID&status=final",
+      "channel": {
+        "type": "websocket/rest-hook",
+        "endpoint": "http://localhost:5001/",
+		"payload": "application/json"
+      }
+    }
