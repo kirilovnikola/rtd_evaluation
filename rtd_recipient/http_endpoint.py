@@ -8,7 +8,8 @@ import csv
 try:
     port_id = sys.argv[1]
 except:
-    print("Failed to assign arguments!")
+    print("Failed to assign arguments! Using default port 5001.")
+    port_id = "5001"
 
 app = Flask(__name__)
 with open('receipt_'+port_id+'.csv', 'w', newline='') as file:
@@ -64,4 +65,3 @@ with open('receipt_'+port_id+'.csv', 'w', newline='') as file:
 
     if __name__ == "__main__":
         app.run(host='localhost', port=port_id)
-        #app.run(host='localhost', port='5002')
