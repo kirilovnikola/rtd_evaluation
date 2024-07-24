@@ -13,7 +13,8 @@ fhir_url= "http://localhost:8080/fhir/Observation/"
 try:
     patient_id = sys.argv[1]
 except:
-    print("Failed to assign arguments!")
+    print("Failed to assign patient id!")
+    sys.exit()
 
 #prepare for post request to FHIR Server
 session = requests.Session()
